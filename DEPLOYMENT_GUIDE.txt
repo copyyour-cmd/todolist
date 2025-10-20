@@ -1,0 +1,106 @@
+MySQL 性能索引优化部署指南
+================================
+
+## 快速执行命令
+
+### 1. 备份数据库
+ssh ubuntu@43.156.6.206 << EOF
+mysqldump -u root -p"goodboy" todolist_cloud | gzip > ~/database_backups/todolist_cloud_backup_$(date +%Y%m%d_%H%M%S).sql.gz
+EOF
+
+### 2. 执行索引创建
+ssh ubuntu@43.156.6.206 << EOF
+mysql -u root -p"goodboy" todolist_cloud << 'SQL'
+USE todolist_cloud;
+
+-- user_tasks表 - 3个复合索引
+ALTER TABLE user_tasks ADD INDEX idx_user_id_status (user_id, status);
+ALTER TABLE user_tasks ADD INDEX idx_user_id_due_at (user_id, due_at);
+ALTER TABLE user_tasks ADD INDEX idx_user_id_deleted_at (user_id, deleted_at);
+
+-- user_lists表 - 1个复合索引
+ALTER TABLE user_lists ADD INDEX idx_user_id_is_default (user_id, is_default);
+
+-- sync_logs表 - 1个复合索引
+ALTER TABLE sync_logs ADD INDEX idx_user_id_sync_at (user_id, sync_at);
+
+-- cloud_sync_records表 - 1个复合索引
+ALTER TABLE cloud_sync_records ADD INDEX idx_user_id_started_at (user_id, started_at);
+SQL
+EOF
+
+### 3. 验证索引创建
+ssh ubuntu@43.156.6.206 << EOF
+mysql -u root -p"goodboy" todolist_cloud -e "
+  SELECT TABLE_NAME, INDEX_NAME, COLUMN_NAME, SEQ_IN_INDEX
+  FROM information_schema.STATISTICS
+  WHERE TABLE_SCHEMA = 'todolist_cloud'
+  AND INDEX_NAME IN (
+    'idx_user_id_status',
+    'idx_user_id_due_at',
+    'idx_user_id_deleted_at',
+    'idx_user_id_is_default',
+    'idx_user_id_sync_at',
+    'idx_user_id_started_at'
+  )
+  ORDER BY TABLE_NAME, INDEX_NAME, SEQ_IN_INDEX;
+"
+EOF
+
+## 性能验证
+
+### 检查EXPLAIN输出
+ssh ubuntu@43.156.6.206 << EOF
+mysql -u root -p"goodboy" todolist_cloud -e "
+  EXPLAIN SELECT * FROM user_tasks
+  WHERE user_id = 1 AND status = 'pending'
+  ORDER BY sort_order ASC\G
+"
+EOF
+
+预期输出：
+- type: RANGE 或 REF (而不是ALL)
+- key: idx_user_id_status
+- rows: 较小的数字
+
+## 回滚命令
+
+ssh ubuntu@43.156.6.206 << EOF
+mysql -u root -p"goodboy" todolist_cloud << 'SQL'
+ALTER TABLE user_tasks DROP INDEX idx_user_id_status;
+ALTER TABLE user_tasks DROP INDEX idx_user_id_due_at;
+ALTER TABLE user_tasks DROP INDEX idx_user_id_deleted_at;
+ALTER TABLE user_lists DROP INDEX idx_user_id_is_default;
+ALTER TABLE sync_logs DROP INDEX idx_user_id_sync_at;
+ALTER TABLE cloud_sync_records DROP INDEX idx_user_id_started_at;
+SQL
+EOF
+
+## 文件位置
+
+- SQL脚本: E:\todolist\server\database\add_performance_indexes.sql
+- 回滚脚本: E:\todolist\server\database\rollback_indexes.sql
+- 性能分析: E:\todolist\server\database\PERFORMANCE_INDEX_ANALYSIS.md
+- 部署脚本: E:\todolist\deploy_indexes.sh
+
+## 预期成效
+
+- 查询响应时间: 50-80% 改善
+- 磁盘I/O: 70-85% 减少
+- 数据库CPU: 40-60% 降低
+- 索引大小: 15-30 MB
+
+## 关键指标
+
+- 执行时间: 5-15秒
+- 索引数量: 6个
+- 受影响表: 4个 (user_tasks, user_lists, sync_logs, cloud_sync_records)
+- 索引类型: 复合索引 (Composite Indexes)
+
+## 推荐执行时间
+
+- 非高峰期（凌晨2-4点）
+- 确保有完整备份
+- 准备好回滚方案
+- 执行后需要监控应用性能
+

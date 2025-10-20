@@ -1,0 +1,497 @@
+﻿{
+  "appTitle": "待办清单",
+  "homeFilterToday": "今天",
+  "homeFilterOverdue": "已逾期",
+  "homeFilterUpcoming": "即将到来",
+  "homeEmptyTitle": "今天还没有计划",
+  "homeEmptySubtitle": "记录一个任务或安排一段专注时间，开始行动吧。",
+  "homeEmptyAction": "添加任务",
+  "homeErrorTitle": "出现了问题",
+  "homeErrorDetails": "{error}",
+  "homeFabLabel": "新建任务",
+  "homeSelectionTitle": "已选择 {count} 项",
+  "@homeSelectionTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeQuickIdeaTooltip": "快速记录灵感",
+  "homeFilterBarTitle": "筛选器",
+  "homeBatchComplete": "完成",
+  "homeBatchDelete": "删除",
+  "homeBatchMove": "移动到列表",
+  "homeBatchTag": "添加标签",
+  "homeTagDialogTitle": "选择标签",
+  "homeCommonCancel": "取消",
+  "homeCommonConfirm": "确定",
+  "homeSubtaskSummary": "已完成 {completed}/{total} 个子任务",
+  "taskFormNewTitle": "新建任务",
+  "taskFormEditTitle": "编辑任务",
+  "taskFormTitleLabel": "标题",
+  "taskFormTitleValidation": "请输入标题",
+  "taskFormListLabel": "列表",
+  "taskFormPriorityLabel": "优先级",
+  "taskFormNotesLabel": "备注",
+  "taskFormTagsLabel": "标签",
+  "taskFormDueDate": "截止时间",
+  "taskFormReminder": "提醒时间",
+  "taskFormSubtasks": "子任务",
+  "taskFormAddSubtask": "添加子任务",
+  "taskFormAdd": "添加",
+  "taskFormCreate": "创建任务",
+  "taskFormUpdate": "更新任务",
+  "taskFormSelectList": "请选择列表",
+  "taskFormSaveError": "任务保存失败",
+  "taskPriorityNone": "无",
+  "taskPriorityLow": "低",
+  "taskPriorityMedium": "中",
+  "taskPriorityHigh": "高",
+  "taskPriorityCritical": "紧急",
+  "notificationChannelName": "任务提醒",
+  "notificationChannelDescription": "提醒您处理计划中的任务",
+  "notificationTitle": "任务提醒",
+  "settingsTitle": "设置",
+  "settingsRequirePassword": "启动时需要密码",
+  "settingsRequirePasswordSubtitle": "启用启动口令，保护您的任务数据。",
+  "settingsSetPasswordTitle": "设置密码",
+  "settingsPasswordField": "密码",
+  "settingsPasswordConfirmField": "确认密码",
+  "settingsPasswordRequired": "请输入密码",
+  "settingsPasswordTooShort": "密码至少 4 个字符",
+  "settingsPasswordMismatch": "两次输入的密码不一致",
+  "settingsPasswordEnabled": "已启用密码保护",
+  "settingsPasswordDisabled": "已关闭密码保护",
+  "settingsChangePassword": "修改密码",
+  "settingsPasswordChanged": "密码已更新",
+  "settingsDisablePasswordTitle": "确认关闭密码？",
+  "settingsDisablePasswordMessage": "关闭后启动应用将不再需要输入密码。",
+  "settingsLoadError": "设置加载失败：{error}",
+  "unlockTitle": "输入密码",
+  "unlockPrompt": "请输入密码以继续",
+  "unlockAction": "解锁",
+  "unlockFailed": "密码错误",
+  "commonCancel": "取消",
+  "commonConfirm": "确定",
+  "commonReset": "清除",
+  "settingsAppearanceSection": "外观",
+  "settingsTheme": "主题",
+  "settingsThemeSystem": "跟随系统",
+  "settingsThemeLight": "浅色",
+  "settingsThemeDark": "深色",
+  "settingsLanguage": "语言",
+  "settingsLanguageSystem": "跟随系统",
+  "settingsNotificationsSection": "通知",
+  "settingsEnableNotifications": "启用通知",
+  "settingsEnableNotificationsSubtitle": "接收计划任务的提醒通知",
+  "settingsSecuritySection": "安全",
+  "settingsDataSection": "数据管理",
+  "settingsImportData": "导入数据",
+  "settingsImportDataSubtitle": "从 JSON 文件导入任务",
+  "settingsExportData": "导出数据",
+  "settingsExportDataSubtitle": "将任务保存为 JSON 文件",
+  "settingsLoadDemoData": "加载演示数据",
+  "settingsLoadDemoDataSubtitle": "添加示例任务和列表",
+  "settingsLoadDemoDataConfirm": "如果您的列表为空，将添加演示任务。",
+  "settingsDemoDataLoaded": "演示数据加载成功",
+  "settingsClearAllData": "清除所有数据",
+  "settingsClearAllDataSubtitle": "删除所有任务、列表和标签",
+  "settingsClearAllDataConfirm": "这将永久删除您的所有任务、列表和标签。此操作无法撤销。",
+  "settingsDataCleared": "所有数据已清除",
+  "settingsAboutSection": "关于",
+  "settingsVersion": "版本",
+  "settingsComingSoon": "即将推出",
+  "settingsError": "错误",
+  "settingsContentSection": "内容",
+  "settingsManageLists": "管理列表",
+  "settingsManageListsSubtitle": "创建、编辑和整理您的列表",
+  "listManagementTitle": "管理列表",
+  "listManagementFabLabel": "新建列表",
+  "listManagementEmptyTitle": "还没有列表",
+  "listManagementEmptySubtitle": "创建您的第一个列表来组织任务",
+  "listManagementEmptyAction": "创建列表",
+  "listManagementCreated": "列表已创建",
+  "listManagementUpdated": "列表已更新",
+  "listManagementDeleted": "列表已删除",
+  "listManagementDeleteTitle": "删除列表？",
+  "listManagementDeleteMessage": "确定要删除\"{name}\"吗？",
+  "@listManagementDeleteMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "listManagementDeleteError": "删除列表失败",
+  "listManagementDeleteErrorHasTasks": "无法删除包含任务的列表",
+  "listManagementLoadError": "加载列表失败",
+  "listManagementReorderError": "重新排序失败",
+  "listManagementDefaultLabel": "默认列表",
+  "listFormNewTitle": "新建列表",
+  "listFormEditTitle": "编辑列表",
+  "listFormNameLabel": "列表名称",
+  "listFormNameValidation": "请输入名称",
+  "listFormIconLabel": "图标",
+  "listFormColorLabel": "颜色",
+  "listFormSaveError": "保存列表失败",
+  "commonSave": "保存",
+  "commonCreate": "创建",
+  "commonDelete": "删除",
+  "settingsManageTags": "管理标签",
+  "settingsManageTagsSubtitle": "创建和整理任务标签",
+  "tagManagementTitle": "管理标签",
+  "tagManagementFabLabel": "新建标签",
+  "tagManagementEmptyTitle": "还没有标签",
+  "tagManagementEmptySubtitle": "创建您的第一个标签来分类任务",
+  "tagManagementEmptyAction": "创建标签",
+  "tagManagementCreated": "标签已创建",
+  "tagManagementUpdated": "标签已更新",
+  "tagManagementDeleted": "标签已删除",
+  "tagManagementDeletedWithTaskUpdate": "标签已删除，并已从任务中移除",
+  "tagManagementDeleteTitle": "删除标签？",
+  "tagManagementDeleteMessage": "确定要删除\"{name}\"吗？",
+  "@tagManagementDeleteMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tagManagementDeleteMessageWithTasks": "确定要删除\"{name}\"吗？它被 {count} 个任务使用，将从这些任务中移除。",
+  "@tagManagementDeleteMessageWithTasks": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagManagementDeleteError": "删除标签失败",
+  "tagManagementLoadError": "加载标签失败",
+  "tagManagementTaskCount": "{count} 个任务",
+  "@tagManagementTaskCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagFormNewTitle": "新建标签",
+  "tagFormEditTitle": "编辑标签",
+  "tagFormNameLabel": "标签名称",
+  "tagFormNameValidation": "请输入名称",
+  "tagFormColorLabel": "颜色",
+  "tagFormPreview": "预览：",
+  "tagFormPreviewPlaceholder": "标签名称",
+  "tagFormSaveError": "保存标签失败",
+  "searchHint": "搜索任务...",
+  "searchEmptyHistory": "开始搜索以查找您的任务",
+  "searchRecentSearches": "最近搜索",
+  "searchClearHistory": "清空",
+  "searchNoResults": "未找到任务",
+  "searchNoResultsHint": "尝试使用不同的关键词或检查拼写",
+  "searchResultsCount": "{count} 个结果",
+  "@searchResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "taskDetailTitle": "任务详情",
+  "taskDetailNotFound": "任务未找到",
+  "taskDetailPriority": "优先级",
+  "taskDetailList": "列表",
+  "taskDetailTags": "标签",
+  "taskDetailDueDate": "截止时间",
+  "taskDetailReminder": "提醒时间",
+  "taskDetailNotes": "备注",
+  "taskDetailSubtasks": "子任务",
+  "taskDetailMetadata": "信息",
+  "taskDetailCreated": "创建时间",
+  "taskDetailUpdated": "更新时间",
+  "taskDetailCompleted": "完成时间",
+  "taskDetailDuplicate": "复制",
+  "taskDetailDelete": "删除",
+  "taskDetailDeleteConfirmTitle": "删除任务？",
+  "taskDetailDeleteConfirmMessage": "确定要删除\"{title}\"吗？",
+  "@taskDetailDeleteConfirmMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "taskDetailDeleted": "任务已删除",
+  "taskDetailDeleteError": "删除任务失败",
+  "taskDetailDuplicated": "任务已复制",
+  "homeSortByLabel": "排序方式",
+  "homeSortByManual": "手动排序",
+  "homeSortByDueDate": "截止时间",
+  "homeSortByPriority": "优先级",
+  "homeSortByCreatedDate": "创建时间",
+  "homeShowCompletedLabel": "已完成",
+  "settingsStatistics": "统计与洞察",
+  "settingsStatisticsSubtitle": "查看任务完成率和生产力趋势",
+  "settingsCalendar": "日历视图",
+  "settingsCalendarSubtitle": "在日历中查看和管理任务",
+  "calendarTitle": "日历",
+  "calendarTodayButton": "今天",
+  "calendarTaskCount": "{count} 个任务",
+  "@calendarTaskCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarNoTasks": "当天没有任务",
+  "calendarTaskMoved": "任务日期已更新",
+  "focusTitle": "专注模式",
+  "focusHistoryButton": "历史记录",
+  "focusTodayMinutes": "今天已专注 {minutes} 分钟",
+  "@focusTodayMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "focusSelectDuration": "选择专注时长",
+  "focusDurationShort": "5分钟",
+  "focusDurationStandard": "25分钟",
+  "focusDurationLong": "45分钟",
+  "focusStart": "开始专注",
+  "focusPause": "暂停",
+  "focusResume": "继续",
+  "focusCancel": "取消",
+  "focusCompleted": "专注完成！",
+  "focusStartNew": "开始新专注",
+  "focusCancelTitle": "取消专注？",
+  "focusCancelMessage": "确定要取消当前的专注会话吗？",
+  "focusCompleteTask": "标记任务完成",
+  "focusTaskCompleted": "任务已标记为完成",
+  "settingsFocus": "专注模式",
+  "settingsFocusSubtitle": "使用番茄钟提升专注力",
+  "statisticsTitle": "统计与洞察",
+  "statisticsCompletionRate": "完成率统计",
+  "statisticsToday": "今天",
+  "statisticsThisWeek": "本周",
+  "statisticsThisMonth": "本月",
+  "statisticsTrend": "任务趋势（最近7天）",
+  "statisticsTrendCreated": "创建",
+  "statisticsTrendCompleted": "完成",
+  "statisticsByList": "按列表统计",
+  "statisticsByTag": "按标签统计",
+  "statisticsHeatmap": "生产力热力图（最近30天）",
+  "statisticsHeatmapTooltip": "{date}\n完成{count}个任务",
+  "@statisticsHeatmapTooltip": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statisticsCompletedTasks": "{completed}/{total}",
+  "taskFormRecurrence": "重复",
+  "taskFormRecurrenceNone": "不重复",
+  "recurrenceDaily": "每天",
+  "recurrenceWeekly": "每周",
+  "recurrenceMonthly": "每月",
+  "recurrenceYearly": "每年",
+  "recurrenceCustom": "自定义",
+  "recurrenceConfig": "配置重复",
+  "recurrenceInterval": "间隔",
+  "recurrenceDaysOfWeek": "星期",
+  "recurrenceSpecificDay": "指定日期",
+  "recurrenceNeverEnds": "永不结束",
+  "recurrenceEndAfterCount": "在指定次数后结束",
+  "recurrenceEndOnDate": "在指定日期后结束",
+  "recurrenceOccurrences": "次数",
+  "recurrenceEveryNDays": "每 {interval} 天",
+  "@recurrenceEveryNDays": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceEveryNWeeks": "每 {interval} 周",
+  "@recurrenceEveryNWeeks": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceEveryNMonths": "每 {interval} 月",
+  "@recurrenceEveryNMonths": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceEveryNYears": "每 {interval} 年",
+  "@recurrenceEveryNYears": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceDayOfMonth": "每月 {day} 日",
+  "@recurrenceDayOfMonth": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceUntil": "直到 {date}",
+  "@recurrenceUntil": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  },
+  "recurrenceCount": "{count} 次",
+  "@recurrenceCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weekdayMonday": "星期一",
+  "weekdayTuesday": "星期二",
+  "weekdayWednesday": "星期三",
+  "weekdayThursday": "星期四",
+  "weekdayFriday": "星期五",
+  "weekdaySaturday": "星期六",
+  "weekdaySunday": "星期日",
+  "weekdayMondayShort": "周一",
+  "weekdayTuesdayShort": "周二",
+  "weekdayWednesdayShort": "周三",
+  "weekdayThursdayShort": "周四",
+  "weekdayFridayShort": "周五",
+  "weekdaySaturdayShort": "周六",
+  "weekdaySundayShort": "周日",
+  "taskFormAttachments": "附件",
+  "taskDetailAttachments": "附件",
+  "homeQuickIdeaTitle": "记录灵感",
+  "homeQuickIdeaHint": "写下你的奇思妙想...",
+  "homeQuickIdeaSave": "保存",
+  "homeQuickIdeaDefaultTag": "#灵感",
+  "homeBatchCompleteSuccess": "已完成 {count} 个任务",
+  "@homeBatchCompleteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchUncompleteSuccess": "已取消完成 {count} 个任务",
+  "@homeBatchUncompleteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchActionFailure": "操作失败：{error}",
+  "@homeBatchActionFailure": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "homeBatchDeleteTitle": "删除任务？",
+  "homeBatchDeleteMessage": "确定要删除 {count} 个任务吗？此操作无法撤销。",
+  "@homeBatchDeleteMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchDeleteSuccess": "已删除 {count} 个任务",
+  "@homeBatchDeleteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchMoveTitle": "移动到列表",
+  "homeBatchMoveSuccess": "已移动 {count} 个任务",
+  "@homeBatchMoveSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchTagSuccess": "已为 {count} 个任务添加标签",
+  "@homeBatchTagSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartReminderButtonLabel": "智能提醒",
+  "smartReminderButtonWithCount": "智能提醒 ({count})",
+  "@smartReminderButtonWithCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartReminderSheetTitle": "智能提醒",
+  "smartReminderSheetDone": "完成",
+  "smartReminderEveryMinutes": "每 {minutes} 分重复，共 {count} 次",
+  "@smartReminderEveryMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartReminderAddTime": "添加时间提醒",
+  "smartReminderAddRepeating": "添加重复提醒",
+  "smartReminderToday": "今天",
+  "smartReminderTomorrow": "明天",
+  "smartReminderAt": "{date} 在 {time}",
+  "@smartReminderAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "smartReminderRepeatTitle": "重复提醒设置",
+  "smartReminderRepeatInterval": "重复间隔",
+  "smartReminderRepeatEvery": "每",
+  "smartReminderRepeatMinutes": "分钟",
+  "smartReminderRepeatHours": "小时",
+  "smartReminderRepeatTimes": "次数",
+  "smartReminderTimes": "次",
+  "smartReminderRepeatConfirm": "保存"
+}

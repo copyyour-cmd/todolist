@@ -1,0 +1,497 @@
+﻿{
+  "appTitle": "TodoList",
+  "homeFilterToday": "Today",
+  "homeFilterOverdue": "Overdue",
+  "homeFilterUpcoming": "Upcoming",
+  "homeEmptyTitle": "Nothing planned yet",
+  "homeEmptySubtitle": "Capture a task or schedule a focus block to build momentum.",
+  "homeEmptyAction": "Add a task",
+  "homeErrorTitle": "Something went wrong",
+  "homeErrorDetails": "{error}",
+  "homeFabLabel": "New Task",
+  "homeSelectionTitle": "{count} selected",
+  "@homeSelectionTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeQuickIdeaTooltip": "Quick capture idea",
+  "homeFilterBarTitle": "Filters",
+  "homeBatchComplete": "Complete",
+  "homeBatchDelete": "Delete",
+  "homeBatchMove": "Move to list",
+  "homeBatchTag": "Add tags",
+  "homeTagDialogTitle": "Select tags",
+  "homeCommonCancel": "Cancel",
+  "homeCommonConfirm": "Confirm",
+  "homeSubtaskSummary": "{completed} of {total} subtasks completed",
+  "taskFormNewTitle": "New Task",
+  "taskFormEditTitle": "Edit Task",
+  "taskFormTitleLabel": "Title",
+  "taskFormTitleValidation": "Please enter a title",
+  "taskFormListLabel": "List",
+  "taskFormPriorityLabel": "Priority",
+  "taskFormNotesLabel": "Notes",
+  "taskFormTagsLabel": "Tags",
+  "taskFormDueDate": "Due date",
+  "taskFormReminder": "Reminder",
+  "taskFormSubtasks": "Subtasks",
+  "taskFormAddSubtask": "Add subtask",
+  "taskFormAdd": "Add",
+  "taskFormCreate": "Create task",
+  "taskFormUpdate": "Update task",
+  "taskFormSelectList": "Please select a list",
+  "taskFormSaveError": "Unable to save task",
+  "taskPriorityNone": "None",
+  "taskPriorityLow": "Low",
+  "taskPriorityMedium": "Medium",
+  "taskPriorityHigh": "High",
+  "taskPriorityCritical": "Critical",
+  "notificationChannelName": "Task reminders",
+  "notificationChannelDescription": "Reminders for scheduled tasks",
+  "notificationTitle": "Task reminder",
+  "settingsTitle": "Settings",
+  "settingsRequirePassword": "Require password on launch",
+  "settingsRequirePasswordSubtitle": "Protect your tasks with a passcode at startup.",
+  "settingsSetPasswordTitle": "Set password",
+  "settingsPasswordField": "Password",
+  "settingsPasswordConfirmField": "Confirm password",
+  "settingsPasswordRequired": "Please enter a password",
+  "settingsPasswordTooShort": "Use at least 4 characters",
+  "settingsPasswordMismatch": "Passwords do not match",
+  "settingsPasswordEnabled": "Password protection enabled",
+  "settingsPasswordDisabled": "Password protection disabled",
+  "settingsChangePassword": "Change password",
+  "settingsPasswordChanged": "Password updated",
+  "settingsDisablePasswordTitle": "Disable password?",
+  "settingsDisablePasswordMessage": "You will no longer need a password when opening the app.",
+  "settingsLoadError": "Unable to load settings: {error}",
+  "unlockTitle": "Unlock",
+  "unlockPrompt": "Enter your password to continue",
+  "unlockAction": "Unlock",
+  "unlockFailed": "Password incorrect",
+  "commonCancel": "Cancel",
+  "commonConfirm": "Confirm",
+  "commonReset": "Clear",
+  "settingsAppearanceSection": "Appearance",
+  "settingsTheme": "Theme",
+  "settingsThemeSystem": "System default",
+  "settingsThemeLight": "Light",
+  "settingsThemeDark": "Dark",
+  "settingsLanguage": "Language",
+  "settingsLanguageSystem": "System language",
+  "settingsNotificationsSection": "Notifications",
+  "settingsEnableNotifications": "Enable notifications",
+  "settingsEnableNotificationsSubtitle": "Receive reminders for scheduled tasks",
+  "settingsSecuritySection": "Security",
+  "settingsDataSection": "Data management",
+  "settingsImportData": "Import data",
+  "settingsImportDataSubtitle": "Import tasks from a JSON file",
+  "settingsExportData": "Export data",
+  "settingsExportDataSubtitle": "Save your tasks to a JSON file",
+  "settingsLoadDemoData": "Load demo data",
+  "settingsLoadDemoDataSubtitle": "Add sample tasks and lists",
+  "settingsLoadDemoDataConfirm": "This will add demo tasks to your lists if they are empty.",
+  "settingsDemoDataLoaded": "Demo data loaded successfully",
+  "settingsClearAllData": "Clear all data",
+  "settingsClearAllDataSubtitle": "Delete all tasks, lists, and tags",
+  "settingsClearAllDataConfirm": "This will permanently delete all your tasks, lists, and tags. This cannot be undone.",
+  "settingsDataCleared": "All data has been cleared",
+  "settingsAboutSection": "About",
+  "settingsVersion": "Version",
+  "settingsComingSoon": "Coming soon",
+  "settingsError": "Error",
+  "settingsContentSection": "Content",
+  "settingsManageLists": "Manage lists",
+  "settingsManageListsSubtitle": "Create, edit, and organize your lists",
+  "listManagementTitle": "Manage Lists",
+  "listManagementFabLabel": "New List",
+  "listManagementEmptyTitle": "No lists yet",
+  "listManagementEmptySubtitle": "Create your first list to organize your tasks",
+  "listManagementEmptyAction": "Create List",
+  "listManagementCreated": "List created",
+  "listManagementUpdated": "List updated",
+  "listManagementDeleted": "List deleted",
+  "listManagementDeleteTitle": "Delete list?",
+  "listManagementDeleteMessage": "Are you sure you want to delete \"{name}\"?",
+  "@listManagementDeleteMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "listManagementDeleteError": "Failed to delete list",
+  "listManagementDeleteErrorHasTasks": "Cannot delete list with existing tasks",
+  "listManagementLoadError": "Failed to load lists",
+  "listManagementReorderError": "Failed to reorder lists",
+  "listManagementDefaultLabel": "Default list",
+  "listFormNewTitle": "New List",
+  "listFormEditTitle": "Edit List",
+  "listFormNameLabel": "List name",
+  "listFormNameValidation": "Please enter a name",
+  "listFormIconLabel": "Icon",
+  "listFormColorLabel": "Color",
+  "listFormSaveError": "Failed to save list",
+  "commonSave": "Save",
+  "commonCreate": "Create",
+  "commonDelete": "Delete",
+  "settingsManageTags": "Manage tags",
+  "settingsManageTagsSubtitle": "Create and organize tags for your tasks",
+  "tagManagementTitle": "Manage Tags",
+  "tagManagementFabLabel": "New Tag",
+  "tagManagementEmptyTitle": "No tags yet",
+  "tagManagementEmptySubtitle": "Create your first tag to categorize your tasks",
+  "tagManagementEmptyAction": "Create Tag",
+  "tagManagementCreated": "Tag created",
+  "tagManagementUpdated": "Tag updated",
+  "tagManagementDeleted": "Tag deleted",
+  "tagManagementDeletedWithTaskUpdate": "Tag deleted and removed from tasks",
+  "tagManagementDeleteTitle": "Delete tag?",
+  "tagManagementDeleteMessage": "Are you sure you want to delete \"{name}\"?",
+  "@tagManagementDeleteMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tagManagementDeleteMessageWithTasks": "Are you sure you want to delete \"{name}\"? It is used by {count} tasks and will be removed from them.",
+  "@tagManagementDeleteMessageWithTasks": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagManagementDeleteError": "Failed to delete tag",
+  "tagManagementLoadError": "Failed to load tags",
+  "tagManagementTaskCount": "{count} tasks",
+  "@tagManagementTaskCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagFormNewTitle": "New Tag",
+  "tagFormEditTitle": "Edit Tag",
+  "tagFormNameLabel": "Tag name",
+  "tagFormNameValidation": "Please enter a name",
+  "tagFormColorLabel": "Color",
+  "tagFormPreview": "Preview:",
+  "tagFormPreviewPlaceholder": "Tag Name",
+  "tagFormSaveError": "Failed to save tag",
+  "searchHint": "Search tasks...",
+  "searchEmptyHistory": "Start searching to find your tasks",
+  "searchRecentSearches": "Recent searches",
+  "searchClearHistory": "Clear all",
+  "searchNoResults": "No tasks found",
+  "searchNoResultsHint": "Try different keywords or check your spelling",
+  "searchResultsCount": "{count} results",
+  "@searchResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "taskDetailTitle": "Task Details",
+  "taskDetailNotFound": "Task not found",
+  "taskDetailPriority": "Priority",
+  "taskDetailList": "List",
+  "taskDetailTags": "Tags",
+  "taskDetailDueDate": "Due date",
+  "taskDetailReminder": "Reminder",
+  "taskDetailNotes": "Notes",
+  "taskDetailSubtasks": "Subtasks",
+  "taskDetailMetadata": "Information",
+  "taskDetailCreated": "Created",
+  "taskDetailUpdated": "Updated",
+  "taskDetailCompleted": "Completed",
+  "taskDetailDuplicate": "Duplicate",
+  "taskDetailDelete": "Delete",
+  "taskDetailDeleteConfirmTitle": "Delete task?",
+  "taskDetailDeleteConfirmMessage": "Are you sure you want to delete \"{title}\"?",
+  "@taskDetailDeleteConfirmMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "taskDetailDeleted": "Task deleted",
+  "taskDetailDeleteError": "Failed to delete task",
+  "taskDetailDuplicated": "Task duplicated",
+  "homeSortByLabel": "Sort by",
+  "homeSortByManual": "Manual order",
+  "homeSortByDueDate": "Due date",
+  "homeSortByPriority": "Priority",
+  "homeSortByCreatedDate": "Created date",
+  "homeShowCompletedLabel": "Completed",
+  "settingsStatistics": "Statistics & Insights",
+  "settingsStatisticsSubtitle": "View task completion rates and productivity trends",
+  "settingsCalendar": "Calendar View",
+  "settingsCalendarSubtitle": "View and manage tasks in calendar",
+  "calendarTitle": "Calendar",
+  "calendarTodayButton": "Today",
+  "calendarTaskCount": "{count} tasks",
+  "@calendarTaskCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarNoTasks": "No tasks on this day",
+  "calendarTaskMoved": "Task date updated",
+  "focusTitle": "Focus Mode",
+  "focusHistoryButton": "History",
+  "focusTodayMinutes": "Focused {minutes} minutes today",
+  "@focusTodayMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "focusSelectDuration": "Select focus duration",
+  "focusDurationShort": "5 min",
+  "focusDurationStandard": "25 min",
+  "focusDurationLong": "45 min",
+  "focusStart": "Start Focus",
+  "focusPause": "Pause",
+  "focusResume": "Resume",
+  "focusCancel": "Cancel",
+  "focusCompleted": "Focus Completed!",
+  "focusStartNew": "Start New Session",
+  "focusCancelTitle": "Cancel Focus?",
+  "focusCancelMessage": "Are you sure you want to cancel the current focus session?",
+  "focusCompleteTask": "Mark Task Complete",
+  "focusTaskCompleted": "Task marked as completed",
+  "settingsFocus": "Focus Mode",
+  "settingsFocusSubtitle": "Use Pomodoro timer to boost focus",
+  "statisticsTitle": "Statistics & Insights",
+  "statisticsCompletionRate": "Completion Rate Statistics",
+  "statisticsToday": "Today",
+  "statisticsThisWeek": "This Week",
+  "statisticsThisMonth": "This Month",
+  "statisticsTrend": "Task Trend (Last 7 Days)",
+  "statisticsTrendCreated": "Created",
+  "statisticsTrendCompleted": "Completed",
+  "statisticsByList": "Statistics by List",
+  "statisticsByTag": "Statistics by Tag",
+  "statisticsHeatmap": "Productivity Heatmap (Last 30 Days)",
+  "statisticsHeatmapTooltip": "{date}\n{count} tasks completed",
+  "@statisticsHeatmapTooltip": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statisticsCompletedTasks": "{completed}/{total}",
+  "taskFormRecurrence": "Recurrence",
+  "taskFormRecurrenceNone": "Does not repeat",
+  "recurrenceDaily": "Daily",
+  "recurrenceWeekly": "Weekly",
+  "recurrenceMonthly": "Monthly",
+  "recurrenceYearly": "Yearly",
+  "recurrenceCustom": "Custom",
+  "recurrenceConfig": "Configure Recurrence",
+  "recurrenceInterval": "Interval",
+  "recurrenceDaysOfWeek": "Days of Week",
+  "recurrenceSpecificDay": "Specific Day",
+  "recurrenceNeverEnds": "Never ends",
+  "recurrenceEndAfterCount": "End after occurrences",
+  "recurrenceEndOnDate": "End on date",
+  "recurrenceOccurrences": "Occurrences",
+  "recurrenceEveryNDays": "Every {interval} days",
+  "@recurrenceEveryNDays": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceEveryNWeeks": "Every {interval} weeks",
+  "@recurrenceEveryNWeeks": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceEveryNMonths": "Every {interval} months",
+  "@recurrenceEveryNMonths": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceEveryNYears": "Every {interval} years",
+  "@recurrenceEveryNYears": {
+    "placeholders": {
+      "interval": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceDayOfMonth": "Day {day} of month",
+  "@recurrenceDayOfMonth": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "recurrenceUntil": "Until {date}",
+  "@recurrenceUntil": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  },
+  "recurrenceCount": "{count} times",
+  "@recurrenceCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weekdayMonday": "Monday",
+  "weekdayTuesday": "Tuesday",
+  "weekdayWednesday": "Wednesday",
+  "weekdayThursday": "Thursday",
+  "weekdayFriday": "Friday",
+  "weekdaySaturday": "Saturday",
+  "weekdaySunday": "Sunday",
+  "weekdayMondayShort": "Mon",
+  "weekdayTuesdayShort": "Tue",
+  "weekdayWednesdayShort": "Wed",
+  "weekdayThursdayShort": "Thu",
+  "weekdayFridayShort": "Fri",
+  "weekdaySaturdayShort": "Sat",
+  "weekdaySundayShort": "Sun",
+  "taskFormAttachments": "Attachments",
+  "taskDetailAttachments": "Attachments",
+  "homeQuickIdeaTitle": "Capture idea",
+  "homeQuickIdeaHint": "Write down your idea...",
+  "homeQuickIdeaSave": "Save",
+  "homeQuickIdeaDefaultTag": "#idea",
+  "homeBatchCompleteSuccess": "Marked {count} tasks as done",
+  "@homeBatchCompleteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchUncompleteSuccess": "Reopened {count} tasks",
+  "@homeBatchUncompleteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchActionFailure": "Action failed: {error}",
+  "@homeBatchActionFailure": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "homeBatchDeleteTitle": "Delete tasks?",
+  "homeBatchDeleteMessage": "Delete {count} tasks? This cannot be undone.",
+  "@homeBatchDeleteMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchDeleteSuccess": "Deleted {count} tasks",
+  "@homeBatchDeleteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchMoveTitle": "Move to list",
+  "homeBatchMoveSuccess": "Moved {count} tasks",
+  "@homeBatchMoveSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeBatchTagSuccess": "Tagged {count} tasks",
+  "@homeBatchTagSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartReminderButtonLabel": "Smart reminders",
+  "smartReminderButtonWithCount": "Smart reminders ({count})",
+  "@smartReminderButtonWithCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartReminderSheetTitle": "Smart reminders",
+  "smartReminderSheetDone": "Done",
+  "smartReminderEveryMinutes": "Every {minutes} min, {count}×",
+  "@smartReminderEveryMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartReminderAddTime": "Add time reminder",
+  "smartReminderAddRepeating": "Add repeating reminder",
+  "smartReminderToday": "Today",
+  "smartReminderTomorrow": "Tomorrow",
+  "smartReminderAt": "{date} at {time}",
+  "@smartReminderAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "smartReminderRepeatTitle": "Repeat configuration",
+  "smartReminderRepeatInterval": "Interval",
+  "smartReminderRepeatEvery": "Every",
+  "smartReminderRepeatMinutes": "minutes",
+  "smartReminderRepeatHours": "hours",
+  "smartReminderRepeatTimes": "Times",
+  "smartReminderTimes": "times",
+  "smartReminderRepeatConfirm": "Save"
+}

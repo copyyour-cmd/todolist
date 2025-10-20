@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Widget descriptions -->
+    <string name="widget_description">显示今日待办任务（中等尺寸）</string>
+    <string name="widget_small_description">显示今日待办任务（小尺寸）</string>
+    <string name="widget_large_description">显示今日待办任务（大尺寸）</string>
+    <string name="widget_countdown_description">显示下一个任务倒计时</string>
+
+    <!-- Biometric authentication strings -->
+    <string name="biometric_prompt_title">Verify Identity</string>
+    <string name="biometric_prompt_subtitle">Use fingerprint or face</string>
+    <string name="biometric_prompt_description">Please verify your identity to continue</string>
+    <string name="biometric_prompt_negative_button">Use Password</string>
+
+    <!-- local_auth plugin strings -->
+    <string name="use_fingerprint_label">Use Fingerprint</string>
+    <string name="use_face_label">Use Face</string>
+    <string name="use_screen_lock_label">Use Screen Lock</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="retry">Retry</string>
+    <string name="use_password">Use Password</string>
+    <string name="use_pin">Use PIN</string>
+    <string name="use_pattern">Use Pattern</string>
+    <string name="fingerprint_dialog_touch_sensor">Touch fingerprint sensor</string>
+    <string name="fingerprint_error_hw_not_available">Fingerprint hardware not available</string>
+    <string name="fingerprint_error_no_fingerprints">No fingerprint enrolled</string>
+    <string name="fingerprint_error_lockout">Too many attempts, please try again later</string>
+    <string name="fingerprint_error_lockout_permanent">Too many attempts, sensor disabled</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized, please try again</string>
+    <string name="fingerprint_error_canceled">Fingerprint operation canceled</string>
+    <string name="fingerprint_error_user_canceled">User canceled</string>
+    <string name="fingerprint_error_hw_unavailable">Fingerprint hardware unavailable</string>
+    <string name="fingerprint_error_unable_to_process">Unable to process, try again</string>
+    <string name="fingerprint_error_timeout">Fingerprint timeout</string>
+    <string name="fingerprint_error_no_space">Cannot store fingerprint data</string>
+    <string name="fingerprint_error_vendor">Fingerprint sensor error</string>
+    <string name="fingerprint_acquired_partial">Partial fingerprint detected, try again</string>
+    <string name="fingerprint_acquired_insufficient">Unable to recognize fingerprint</string>
+    <string name="fingerprint_acquired_imager_dirty">Fingerprint sensor dirty, clean it</string>
+    <string name="fingerprint_acquired_too_fast">Finger moved too fast</string>
+    <string name="fingerprint_acquired_too_slow">Finger moved too slow</string>
+    <string name="face_error_hw_not_available">Face recognition hardware not available</string>
+    <string name="face_error_timeout">Face recognition timeout</string>
+    <string name="face_error_unable_to_process">Unable to recognize face</string>
+    <string name="face_error_no_face_detected">No face detected</string>
+    <string name="face_error_user_canceled">User canceled</string>
+    <string name="biometric_error_hw_unavailable">Biometric hardware unavailable</string>
+    <string name="biometric_error_user_canceled">User canceled</string>
+    <string name="biometric_error_no_biometrics">No biometric enrolled</string>
+    <string name="biometric_error_canceled">Biometric canceled</string>
+    <string name="default_error_msg">Unknown error</string>
+    <string name="generic_error_user_canceled">User canceled authentication</string>
+    <string name="generic_error_no_keyguard">Device does not support screen lock</string>
+</resources>

@@ -1,0 +1,120 @@
+========================================
+VoltAgent官方代理安装指南
+========================================
+
+重要说明:
+- 这些命令需要你在Claude Code CLI中手动执行
+- 每个命令都需要手动确认
+- 建议从第1批开始,按需安装
+
+========================================
+第1批: 核心必备代理 (20个) - 推荐优先安装
+========================================
+
+# 编程语言核心 (3个)
+/plugin marketplace add VoltAgent/python-pro
+/plugin marketplace add VoltAgent/javascript-pro
+/plugin marketplace add VoltAgent/typescript-pro
+
+# Web框架 (4个)
+/plugin marketplace add VoltAgent/react-expert
+/plugin marketplace add VoltAgent/vue-expert
+/plugin marketplace add VoltAgent/fastapi-pro
+/plugin marketplace add VoltAgent/django-pro
+
+# DevOps核心 (3个)
+/plugin marketplace add VoltAgent/kubernetes-architect
+/plugin marketplace add VoltAgent/docker-expert
+/plugin marketplace add VoltAgent/terraform-specialist
+
+# 数据库 (3个)
+/plugin marketplace add VoltAgent/postgresql-expert
+/plugin marketplace add VoltAgent/mongodb-expert
+/plugin marketplace add VoltAgent/redis-expert
+
+# AI/ML (4个)
+/plugin marketplace add VoltAgent/ai-engineer
+/plugin marketplace add VoltAgent/ml-engineer
+/plugin marketplace add VoltAgent/langchain-architecture
+/plugin marketplace add VoltAgent/rag-implementation
+
+# 安全 (2个)
+/plugin marketplace add VoltAgent/security-auditor
+/plugin marketplace add VoltAgent/devsecops-expert
+
+# 测试 (1个)
+/plugin marketplace add VoltAgent/test-automator
+
+========================================
+第2批: 重要补充代理 (30个)
+========================================
+
+# 更多编程语言
+/plugin marketplace add VoltAgent/java-pro
+/plugin marketplace add VoltAgent/golang-pro
+/plugin marketplace add VoltAgent/rust-pro
+/plugin marketplace add VoltAgent/cpp-pro
+/plugin marketplace add VoltAgent/php-pro
+
+# 更多框架
+/plugin marketplace add VoltAgent/nextjs-expert
+/plugin marketplace add VoltAgent/nestjs-expert
+/plugin marketplace add VoltAgent/spring-boot-expert
+/plugin marketplace add VoltAgent/express-expert
+
+# 移动开发
+/plugin marketplace add VoltAgent/flutter-expert
+/plugin marketplace add VoltAgent/react-native-expert
+/plugin marketplace add VoltAgent/ios-developer
+/plugin marketplace add VoltAgent/android-developer
+/plugin marketplace add VoltAgent/mobile-developer
+
+# 云架构
+/plugin marketplace add VoltAgent/cloud-architect
+/plugin marketplace add VoltAgent/hybrid-cloud-architect
+/plugin marketplace add VoltAgent/multi-cloud-architecture
+
+# 部署和CI/CD
+/plugin marketplace add VoltAgent/deployment-engineer
+/plugin marketplace add VoltAgent/github-actions-templates
+/plugin marketplace add VoltAgent/gitlab-ci-patterns
+/plugin marketplace add VoltAgent/gitops-workflow
+
+# 数据库专家
+/plugin marketplace add VoltAgent/database-architect
+/plugin marketplace add VoltAgent/database-optimizer
+/plugin marketplace add VoltAgent/sql-pro
+
+# 架构模式
+/plugin marketplace add VoltAgent/microservices-patterns
+/plugin marketplace add VoltAgent/architecture-patterns
+/plugin marketplace add VoltAgent/graphql-architect
+/plugin marketplace add VoltAgent/api-designer
+
+# MLOps
+/plugin marketplace add VoltAgent/mlops-engineer
+/plugin marketplace add VoltAgent/data-scientist
+
+========================================
+第3批: 完整安装 (剩余130个)
+========================================
+
+提示: 如需安装全部代理,请参考 install-commands.txt
+包含所有180个VoltAgent官方代理的安装命令
+
+========================================
+快速开始指南
+========================================
+
+1. 打开Claude Code CLI
+2. 复制第1批的20个命令
+3. 在CLI中粘贴并逐个确认
+4. 验证安装: 在CLI中检查代理是否可用
+5. 根据需要继续安装第2批或第3批
+
+预计时间:
+- 第1批: 10分钟
+- 第2批: 15分钟  
+- 全部180个: 90-120分钟
+
+========================================
